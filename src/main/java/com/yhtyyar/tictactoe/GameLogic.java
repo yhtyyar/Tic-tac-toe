@@ -36,7 +36,7 @@ public class GameLogic {
         FIELD[x][y] = COMPUTER;
     }
 
-    static boolean isCellValid(int x, int y) {
+    static boolean isCellValid (int x, int y) {
         // проверяется координата введенного места (оно в пределах нашего массива или нет)
         if (x < 0 || x >= FIELD_SIZE || y < 0 || y >= FIELD_SIZE) {
             return false;
@@ -93,6 +93,7 @@ public class GameLogic {
                 return true;
             }
 
+            //выигришь по диагонали
             for (int i = 0; i < FIELD_SIZE; i++) {
                 for (int j = 0; j < FIELD_SIZE; j++) {
                     if (j == i && FIELD[i][j] == sum) {
@@ -104,6 +105,7 @@ public class GameLogic {
                 return true;
             }
 
+            // выигрышь по обратной дигонали
             for (int i = 0, j = FIELD_SIZE - 1; i < FIELD_SIZE && j >= 0; i++, j--) {
                 if (FIELD[i][j] == sum) {
                     second++;

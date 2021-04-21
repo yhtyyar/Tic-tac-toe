@@ -37,12 +37,4 @@ public class Field {
         }
     }
 
-
-
-
-    void end () {
-        System.out.println("Конец...");
-    }
-
-
 }
