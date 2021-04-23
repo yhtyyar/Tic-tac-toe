@@ -1,7 +1,6 @@
 package main.java.com.yhtyyar.tictactoe;
 
-import static main.java.com.yhtyyar.tictactoe.GameLogic.FIELD_SIZE;
-import static main.java.com.yhtyyar.tictactoe.GameLogic.NULL;
+import static main.java.com.yhtyyar.tictactoe.GameLogic.*;
 
 // Игровое поле
 public class Field {
@@ -15,7 +14,6 @@ public class Field {
                 FIELD[i][j] = NULL;
             }
         }
-
     }
 
     static void printField() {
