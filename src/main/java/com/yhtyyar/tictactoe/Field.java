@@ -16,23 +16,18 @@ public class Field {
         }
     }
 
-    static void printField() {
-        int number = 1;
-        System.out.println("         1   2   3");
-        System.out.println("       -------------" );
-        for(int i = 0; i < FIELD_SIZE; i++) {
-            //выводит вертикальные номера в поле
-            while (number <= FIELD_SIZE) {
-                System.out.print("     " + number + " ");
-                number++;
 
+
+    static void printField() {
+            for (int i = 0; i < FIELD_SIZE; i++) {
+                System.out.print(i + 1 +"\t");
                 for (int j = 0; j < FIELD_SIZE; j++) {
-                    System.out.print("| " + FIELD[i][j] + " ");
+                    System.out.print(FIELD[i][j] + "\t");
                 }
-                System.out.print( "|");
                 System.out.println();
+
             }
         }
-    }
+
 
 }
